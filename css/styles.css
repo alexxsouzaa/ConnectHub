@@ -1,7 +1,130 @@
-*{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+body {
+    font-family: inter, sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    height: 100vh;
+    background: url(/assets/bg3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#Container {
+    margin: auto;
+    width: 360px;
+    margin: 86px auto 0px;
+    padding: 0px 24px;
+}
+
+#profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    max-width: 82px;
+    margin-bottom: 10px;
+}
+
+#profile p{
+    font-weight: 400;
+}
+
+#profile img {
+    width: 116px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 2px solid #fff;
+    margin-bottom: 20px;
+}
+
+.user {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    white-space: nowrap;
+    /* Impede quebra de linha */
+    overflow: hidden;
+    /* Esconde o texto que ainda não "apareceu" */
+    border-right: 2px solid white;
+    /* Simula um cursor */
+    width: 0;
+    /* Começa sem largura */
+    animation: user 1s steps(10) forwards, blink 0.7s infinite;
+}
+
+@keyframes user {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    padding: 24px 0px;
+}
+
+ul li a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 16px;
+
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.1));
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 400;
+
+    transition: background 0.2s;
+}
+
+ul li a:hover {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1.5px solid #ffffff;
+}
+
+a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:active {
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 0px;
+}
+
+#footer {
+    text-decoration: none;
 }
