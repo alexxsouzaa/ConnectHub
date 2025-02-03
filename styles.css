@@ -101,6 +101,8 @@ ul li a {
     text-decoration: none;
     font-size: 13px;
     font-weight: 400;
+    color: #fff;
+    text-decoration: none;
 
     transition: background 0.2s;
 }
@@ -123,6 +125,7 @@ a:active {
 a:focus{
     color: #fff;
 }
+
 
 footer {
     text-align: center;
