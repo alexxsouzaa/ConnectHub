@@ -19,8 +19,8 @@ body {
 }
 
 #Container {
-    margin: 76px auto 0px;
-    width: 390px;
+    margin: 86px auto 0px;
+    width: 400px;
     padding: 0px 24px;
 }
 
@@ -113,7 +113,7 @@ a:focus{
 #social_links{
     display: flex;
     justify-content: center;
-    padding: 24px 0;
+    padding: 8px 0;
     font-size: 16px;
     color: #fff;
     gap: 8px;
@@ -154,7 +154,7 @@ footer {
 @media (max-width: 600px) {
     #Container {
         width: 100%;
-        padding: 16px;
+        padding: 24px;
     }
 
     ul {
