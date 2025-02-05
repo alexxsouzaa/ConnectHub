@@ -114,7 +114,6 @@ ul li a:focus{
     justify-content: center;
     padding: 8px 0;
     font-size: 16px;
-    color: #fff;
     gap: 8px;
     border-radius: 50%;
     
@@ -127,17 +126,22 @@ ul li a:focus{
     padding: 16px;
     text-decoration: none;
     border-radius: 50%;
+    color: #fff;
 }
 
 #social_links a:hover{
     background: rgba(255, 255, 255, 0.2);
 }
 
-#social_links a:visited{
+#social_links p a:visited{
     color: #fff;
 }
 
-#social_links a:active{
+#social_links p a:active{
+    color: #fff;
+}
+
+#social_links p a:focus {
     color: #fff;
 }
 
