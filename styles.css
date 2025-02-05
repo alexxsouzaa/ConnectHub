@@ -19,7 +19,7 @@ body {
 }
 
 #Container {
-    margin: 86px auto 0px;
+    margin: 70px auto 0px;
     width: 400px;
     padding: 0px 24px;
 }
@@ -35,7 +35,7 @@ body {
 }
 
 #profile p{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 #profile img {
@@ -43,14 +43,13 @@ body {
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.9);
     margin-bottom: 20px;
 }
 
 .user {
-    font-family: Inter;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 300;
     white-space: nowrap;
     /* Impede quebra de linha */
     overflow: hidden;
@@ -77,11 +76,11 @@ ul li a {
     justify-content: center;
     padding: 16px 16px;
 
-    background: linear-gradient(45deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.1));
+    background: linear-gradient(70deg, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.08));
     border: 1px solid rgba(255, 255, 255, 0.5);
     border-radius: 8px;
-    backdrop-filter: blur(4px);
-    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
 
     text-decoration: none;
     font-size: 14px;
@@ -97,16 +96,16 @@ ul li a:hover {
     border: 1.5px solid #ffffff;
 }
 
-a:visited {
+ul li a:visited {
     color: #fff;
     text-decoration: none;
 }
 
-a:active {
+ul li a:active {
     color: #fff;
 }
 
-a:focus{
+ul li a:focus{
     color: #fff;
 }
 
@@ -117,6 +116,7 @@ a:focus{
     font-size: 16px;
     color: #fff;
     gap: 8px;
+    border-radius: 50%;
     
 }
 
@@ -147,14 +147,14 @@ footer {
     padding: 24px 0px;
 }
 
-#footer a {
-    text-decoration: none;
+footer a{
+    color: #fff;
 }
 
 @media (max-width: 600px) {
     #Container {
         width: 100%;
-        padding: 24px;
+        padding: 32px;
     }
 
     ul {
